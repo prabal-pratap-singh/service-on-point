@@ -12,6 +12,9 @@ function AttributeCard(props) {
           <span> {props.AttributeText}</span>
         </div>
         <div>
+          
+        </div>
+        <div>
           <BgBadge />
           <img
             src={props.badge.imagePath}
