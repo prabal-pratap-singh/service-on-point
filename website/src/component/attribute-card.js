@@ -11,9 +11,6 @@ function AttributeCard(props) {
         <div>
           <span> {props.AttributeText}</span>
         </div>
-        <div id="name">
-          
-        </div>
         <div>
           <BgBadge />
           <img
