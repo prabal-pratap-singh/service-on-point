@@ -11,7 +11,7 @@ function AttributeCard(props) {
         <div>
           <span> {props.AttributeText}</span>
         </div>
-        <div>
+        <div id="name">
           
         </div>
         <div>
