@@ -6,10 +6,11 @@ import AttributeCard from './component/attribute-card'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const commonProps = {imagePath: 'https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', AttributeText:"Hi", badge:{imagePath:"imagePath"}, altName:"altName"};
+const commonProps = {imagePath: 'https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', AttributeText:"Creative Agency", badge:{imagePath:"https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}, altName:"altName"};
 root.render(
   <React.StrictMode>
     <AttributeCard commonProps={commonProps}/>
+    {/* <AttributeCard commonProps={commonProps}/> */}
   </React.StrictMode>
 );
 

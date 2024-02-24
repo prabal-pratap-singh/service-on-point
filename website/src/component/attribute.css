@@ -1,6 +1,92 @@
 .attributePanel {
+  max-width: fit-content;
+  max-height: 300px;
+}
+
+.attributePanelBg {
   width: 400px;
   height: 300px;
   flex-shrink: 0;
   mix-blend-mode: luminosity;
+}
+
+.attributeTextBg {
+  width: 360px;
+  height: 76px;
+  background: #101010e5;
+}
+
+.attributeText {
+  position: relative;
+  max-width: fit-content;
+  max-height: 76px;
+}
+
+.attributeTextContent {
+  position: relative;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27.72px;
+  left: 32px;
+  top: -52px;
+}
+
+.attributeBadge {
+  position: relative;
+  left: 285px;
+  bottom: 105px;
+  max-width: fit-content;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.attributeBadge.fadeIn {
+  opacity: 1;
+}
+
+.attributeBadge.fadeOut {
+  opacity: 0;
+}
+
+.badgeLogo {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  left: -44px;
+  top: -11px;
+}
+
+.badgeBg {
+  width: 56px;
+  height: 56px;
+}
+
+.attributePanelFeature {
+  position: relative;
+  left: 20px;
+  bottom: 101px;
+  max-width: fit-content;
+  max-height: 98px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
