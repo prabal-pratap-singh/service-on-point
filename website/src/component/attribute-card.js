@@ -1,17 +1,17 @@
 import { ReactComponent as BgBadge } from "../home/assets/bg-badge.svg";
 import React, { useState } from "react";
-import { keyframes, css } from "styled-components";
 import "./attribute.css";
 function AttributeCard(props) {
-  // prop json ==> {imagePath: 'https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', AttributeText:"Creative Agency", badge:{imagePath:"https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}, altName:"altName"};
-  const [isBadgeVisible, setBadgeVisibility] = useState(true);
-  const fadingAnimation = isBadgeVisible ? "fadeIn" : "fadeOut";
+  // prop json ==> {imagePath: 'https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', attributeContentHeading:"Creative Agency", attributeContentBody:"we create path-breaking work that challenges the status qua and positively impact our client's ubsiness. We make sure how we communicate, and design helps our brand stand out", badge:{imagePath:"https://images.pexels.com/photos/17866318/pexels-photo-17866318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}, altName:"altName"};
+  const [hoverAnimation, setHoverAnimation] = useState(true);
+  const fadingAnimation = hoverAnimation ? "fadeIn" : "fadeOut";
+  const expandingAnimation = hoverAnimation ? "backwardAnimation" : "forwardAnimation";
   props = props.commonProps;
   return (
     <div
       className="attributePanel"
-      onMouseEnter={() => setBadgeVisibility(false)}
-      onMouseLeave={() => setBadgeVisibility(true)}
+      onMouseEnter={() => setHoverAnimation(false)}
+      onMouseLeave={() => setHoverAnimation(true)}
     >
       <img
         src={props.imagePath}
@@ -20,8 +20,12 @@ function AttributeCard(props) {
       />
       <div className="attributePanelFeature">
         <div className="attributeText">
-          <div className="attributeTextBg"></div>
-          <span className="attributeTextContent"> {props.AttributeText}</span>
+          <div className={`attributeTextBg ${expandingAnimation}`}></div>
+          <span className={`attributeTextContent ${expandingAnimation}`}> {props.attributeContentHeading}</span>
+          <div className={`attributeTextContentBody ${fadingAnimation}`}>
+            <p>{props.attributeContentBody}</p>
+            <hr/>
+          </div>
         </div>
         <div className={`attributeBadge ${fadingAnimation}`}>
           <BgBadge className="badgeBg" />
