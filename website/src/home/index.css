@@ -4,7 +4,6 @@
   height: 100%; */
   top: 0;
   left: 0;
-  position: absolute;
 }
 
 #heading1 {
@@ -33,11 +32,13 @@
 .female {
   width: 230px;
   left: 652px;
+  top: -19px;
 }
 
 .male {
   left: 732px;
   width: 478px;
+  top: -19px;
 }
 
 #homeButton {
@@ -89,4 +90,16 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 60px 40px 0px 70px;
+  position: relative;
+}
+
+.leftSide{
+  margin-top: 30px;
 }
