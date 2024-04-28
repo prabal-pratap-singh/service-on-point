@@ -8,11 +8,13 @@ import { ReactComponent as Linkdin } from "./assets/linkdin-logo.svg";
 import AttributeDeck from "../component/attribute-deck";
 import CircleImg from "../component/circle-img";
 import CyanButton from "../component/cyan-button";
+import ScrollingText from "../component/scrolling-text";
+import PlayBackVideo from "../component/playback-video";
 
 function Home() {
   const common = {
     imageUrl:
-      "https://s3-alpha-sig.figma.com/img/7c4c/ec3d/369ca4e8e5d93dc2438c5d127031ce08?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qsLSeEqmxsACr79Dz30z8b96Lu5r80r7~UUgIHWafsaHujCjBnXGKxT7Juz7WjJfVLT11VtMEPES6qwWsd9e0t5z-DXlYd5-GBjJKTjRwFxEyj9OWFF7qDV0slboB03ACpUDTftrH4FjVPrFE3wlSscoQXw1vRIPHZSRB6LaevsnSYiWI8a-puMvu7RsG-HE-zV362sWR9Ww8SfFbNKf8F6xfGtm7I-6p8YWRu1eceQCqtsf95daRYxL556NyyuGaqD1Cd6TOeXdguq7~XoJauCGo15nEWIPiyaJrbr-UFKJFrFA5FkUUOkyuMxlvHBdP~bv1bzHxbM261iMUuRj1A__",
+      "https://i.ibb.co/Gk1vbr9/About-Image1.png",
     width: "588px",
     height: "588px",
   };
@@ -46,7 +48,7 @@ function Home() {
               borderRadius: "50%",
               position: "absolute",
               left: "80px",
-              top:"25px"
+              top: "25px",
             }}
           ></div>
           <CircleImg imgProps={common} />
@@ -57,6 +59,8 @@ function Home() {
               background: "#47E4BF",
               borderRadius: "50%",
               position: "relative",
+              left: "-7px",
+              top: "-26px",
             }}
           ></div>
         </div>
@@ -119,6 +123,7 @@ function Home() {
               color: "#47E4BF",
               width: "580px",
               height: "46px",
+              top: "-30px",
             }}
           >
             Transforming the Landscape of Your Product Development Experience
@@ -135,6 +140,7 @@ function Home() {
               color: "#5D5D5D",
               width: "580px",
               height: "57px",
+              top: "-10px",
             }}
           >
             We transform visions into digital realities. We're more than just a
@@ -143,9 +149,23 @@ function Home() {
             suite of services that empower businesses to thrive in the digital
             age.
           </p>
-          <CyanButton position={"relative"} height={"64px"} width={"174px"} top={"20px"}/>
+          <CyanButton
+            position={"relative"}
+            height={"64px"}
+            width={"174px"}
+            top={"20px"}
+          />
         </div>
       </div>
+      <div style={{ overflow: "hidden", position: "relative", top: "-120px" }}>
+        <ScrollingText
+          behavior="alternate"
+          text="Web Design - Web Development - Social Media Marketer Agency -"
+        />
+      </div>
+      
+        <PlayBackVideo />
+      
     </section>
   );
 }
