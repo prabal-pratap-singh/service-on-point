@@ -7,16 +7,16 @@ function PlayBackVideo(props) {
       style={{
         position: "relative",
         width: "100%",
-        height: "100vh",
+        height: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "100px"
+        marginBottom: "100px",
       }}
     >
       <div
         style={{
-          position: "absolute"
+          position: "relative",
         }}
       >
         <img
@@ -40,7 +40,7 @@ function PlayBackVideo(props) {
             position: "absolute",
             zIndex: 1,
             left: "1040px",
-            top: "-1px"
+            top: "-1px",
           }}
         />
       </div>

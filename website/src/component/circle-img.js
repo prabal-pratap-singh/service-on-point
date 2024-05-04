@@ -7,7 +7,7 @@ function CircleImg(props) {
         overflow: "hidden",
         width: `${imgProps.width}`,
         height: `${imgProps.height}`,
-        position: "relative",
+        position: "relative"
       }}
     >
       <img
@@ -18,7 +18,7 @@ function CircleImg(props) {
           position: "absolute",
           clipPath: "circle(50%)",
           objectFit: "cover",
-          mixBlendMode: "luminosity",
+          mixBlendMode: "luminosity"
         }}
       />
     </span>

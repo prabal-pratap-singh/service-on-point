@@ -10,11 +10,14 @@ import CircleImg from "../component/circle-img";
 import CyanButton from "../component/cyan-button";
 import ScrollingText from "../component/scrolling-text";
 import PlayBackVideo from "../component/playback-video";
+import ServiceDeck from "../component/service-deck";
+import Testimonials from "../component/testimonials";
+import BlogDeck from "../component/blog-deck";
+import Footer from "../component/footer";
 
 function Home() {
   const common = {
-    imageUrl:
-      "https://i.ibb.co/Gk1vbr9/About-Image1.png",
+    imageUrl: "https://i.ibb.co/Gk1vbr9/About-Image1.png",
     width: "588px",
     height: "588px",
   };
@@ -27,10 +30,10 @@ function Home() {
         <span id="homeButtonText">Let's Talk</span>
       </button>
       <div id="socialMediaHandles">
-        <TwitterLogo />
-        <FacebookLogo />
-        <Linkdin />
-        <InstaLogo />
+        <TwitterLogo style={{ width: "16px", height: "16px" }} />
+        <FacebookLogo style={{ width: "10px", height: "16px" }} />
+        <Linkdin style={{ width: "16px", height: "16px" }} />
+        <InstaLogo style={{ width: "16px", height: "16px" }} />
       </div>
       <div id="contactNumber">
         <b>
@@ -112,7 +115,6 @@ function Home() {
           </p>
           <p
             style={{
-              top: "-20px",
               position: "relative",
               fontFamily: "Plus Jakarta Sans",
               fontSize: "18px",
@@ -157,15 +159,121 @@ function Home() {
           />
         </div>
       </div>
-      <div style={{ overflow: "hidden", position: "relative", top: "-120px" }}>
+      <div
+        style={{
+          overflow: "hidden",
+          position: "relative",
+          marginTop: "-120px",
+        }}
+      >
         <ScrollingText
           behavior="alternate"
           text="Web Design - Web Development - Social Media Marketer Agency -"
         />
       </div>
-      
-        <PlayBackVideo />
-      
+
+      <PlayBackVideo />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "8px",
+            height: "8px",
+            background: "#47E4BF",
+            borderRadius: "50%",
+            alignContent: "center",
+            position: "relative",
+          }}
+        ></div>
+        <p
+          style={{
+            fontFamily: "Plus Jakarta Sans",
+            fontSize: "15px",
+            fontWeight: "500",
+            lineHeight: "17.64px",
+            color: "#5D5D5D",
+          }}
+        >
+          WHAT WE’RE OFFERING
+        </p>
+        <div style={{ textAlign: "center" }}>
+          <p
+            style={{
+              display: "inline-block",
+              maxWidth: "654px",
+              // maxHeight: "176px",
+              fontFamily: "Plus Jakarta Sans",
+              fontStyle: "normal",
+              fontWeight: "800",
+              fontSize: "50px",
+              lineHeight: "63px",
+              color: "#FFFFFF",
+              margin: "0 auto",
+            }}
+          >
+            <span style={{ color: "#47E4BF" }}>Services</span> We’re Providing
+            To Our Customers
+          </p>
+        </div>
+      </div>
+      <ServiceDeck />
+      <Testimonials />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          marginTop: "250px",
+        }}
+      >
+        <div
+          style={{
+            width: "8px",
+            height: "8px",
+            background: "#47E4BF",
+            borderRadius: "50%",
+            alignContent: "center",
+            position: "relative",
+          }}
+        ></div>
+        <p
+          style={{
+            fontFamily: "Plus Jakarta Sans",
+            fontSize: "15px",
+            fontWeight: "500",
+            lineHeight: "17.64px",
+            color: "#5D5D5D",
+          }}
+        >
+          OUR RECENT POST
+        </p>
+        <div style={{ textAlign: "center" }}>
+          <p
+            style={{
+              display: "inline-block",
+              maxWidth: "654px",
+              // maxHeight: "176px",
+              fontFamily: "Plus Jakarta Sans",
+              fontStyle: "normal",
+              fontWeight: "800",
+              fontSize: "50px",
+              lineHeight: "63px",
+              color: "#FFFFFF",
+              margin: "0 auto",
+            }}
+          >
+            Our Latest <span style={{ color: "#47E4BF" }}>News & Articles</span>{" "}
+            From the <span style={{ color: "#47E4BF" }}>Blog</span>
+          </p>
+        </div>
+      </div>
+      <BlogDeck />
+      <Footer />
     </section>
   );
 }
