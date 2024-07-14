@@ -18,6 +18,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: cd website
+        run: ls
+      - name: cd website
         run: cd website 
       - name: cd website
         run: pwd
