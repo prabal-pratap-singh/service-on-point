@@ -18,7 +18,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: cd website
-        run: cd website
+        run: cd website 
+      - name: cd website
+        run: pwd
       - name: Detect package manager
         id: detect-package-manager
         run: |
