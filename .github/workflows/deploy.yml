@@ -19,7 +19,7 @@ jobs:
         run: npm run test:ci
         env:
           CI: ""
-        working-directory: ./website
+        working-directory: website
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Change Directory to Website
