@@ -36,7 +36,7 @@ export default function ContactUsForm(props) {
     <div style={formStyles.container}>
       <form
         target="_blank"
-        action="https://formsubmit.co/your@email.com"
+        action="https://formsubmit.co/pratapsinghprabal516@gmail.com"
         method="POST"
       >
         <div style={{maxWidth: "623px", width:"623px"}}>

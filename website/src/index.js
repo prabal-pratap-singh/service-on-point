@@ -6,6 +6,7 @@ import ContactUs from "./contactUs";
 import Navbar from "./component/navbar";
 import reportWebVitals from "./reportWebVitals";
 import ErrorPage from "./component/default-error-page";
+import Service from"./services/index";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactUs />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/services",
+    element: <Service />,
     errorElement: <ErrorPage />
   },
 ]);
