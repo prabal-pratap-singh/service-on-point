@@ -41,11 +41,6 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ./website
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "21"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}/website
       - name: Build project
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
         working-directory: ./website
