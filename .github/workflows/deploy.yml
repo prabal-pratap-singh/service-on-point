@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+      - name: cd website
+        run: cd website
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -39,8 +41,6 @@ jobs:
         with:
           node-version: "21"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: cd website
-        run: cd website
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build project
