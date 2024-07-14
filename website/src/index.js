@@ -5,14 +5,35 @@ import Home from "./home/index";
 import ContactUs from "./contactUs";
 import Navbar from "./component/navbar";
 import reportWebVitals from "./reportWebVitals";
-import Footer from "./component/footer"
+import ErrorPage from "./component/default-error-page";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/home",
+    element: <Home />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "/contact",
+    element: <ContactUs />,
+    errorElement: <ErrorPage />
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Navbar />
-    <Home />
-    {/* <ContactUs /> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

@@ -1,7 +1,6 @@
 import React from "react";
 export default function PageHeadingBg(props) {
   const { pageHeadingBgUrl } = props;
-  console.log(pageHeadingBgUrl)
   // "url(https://i.ibb.co/S7RkcQg/Hero-Image-Contact-Us-bg.png)"
   return (
     <div>

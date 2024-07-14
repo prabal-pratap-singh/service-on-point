@@ -1,14 +1,6 @@
 import { useState } from "react";
 export default function Navbar() {
-  const [isHovered, setIsHovered] = useState(false);
-  const items = ["Home", "About", "Services", "Constact"];
-  let color = "white";
-  if (isHovered) {
-    color = "#47E4BF";
-  } else {
-    color = "white";
-  }
-  console.log(color);
+  const items = ["Home", "About", "Services", "Contact"];
   return (
     <section
       style={{
@@ -18,6 +10,7 @@ export default function Navbar() {
         width: "100%",
         zIndex: "99",
         columnGap: "248px",
+        marginTop: "19px"
       }}
     >
       <div
@@ -66,7 +59,7 @@ export default function Navbar() {
           width: "100%",
           paddingTop: "10px",
           margin: "0",
-          cursor: "default"
+          cursor: "default",
         }}
       >
         {items.map((item, index) => (
@@ -82,22 +75,30 @@ export default function Navbar() {
               height: "20px",
             }}
           >
-            {item}
+            <a
+              href={`${item.toLowerCase()}`}
+              style={{ textDecoration: "none" }}
+            >
+              {item}
+            </a>
           </li>
         ))}
       </ul>
       <style>
-        {
-            `
+        {`
             li{
                 color:white;
             }
             li:hover{
                 color: #47E4BF;
             }
-
-            `
-        }
+            li a:visited{
+                color: white
+            }
+            li a:hover{
+                color: #47E4BF;
+            }
+            `}
       </style>
     </section>
   );
