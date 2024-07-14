@@ -15,6 +15,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: npm test:ci
+        run: npm run test:ci
+        env:
+          CI: ""
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Change Directory to Website
@@ -38,6 +42,11 @@ jobs:
             exit 1
           fi
         working-directory: ./website
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ./website
