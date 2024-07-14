@@ -2,13 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./home/index";
+import ContactUs from "./contactUs";
+import Navbar from "./component/navbar";
 import reportWebVitals from "./reportWebVitals";
 import Footer from "./component/footer"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Navbar />
     <Home />
+    {/* <ContactUs /> */}
   </React.StrictMode>
 );
 

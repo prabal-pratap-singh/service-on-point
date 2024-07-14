@@ -20,11 +20,13 @@ function PlayBackVideo(props) {
         }}
       >
         <img
-          src="https://s3-alpha-sig.figma.com/img/d876/998c/2f2f84e200d91d406a3bbc70c2223221?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DnJpBzM0deYPBF9AKtB3rGZ8Sj68LDrvCNxL76DcU8hMuV2mDWdTIGJ8kO0V2uFCJ9ETqJHNYHvRSglIKCAJ8W4~4I35RvIUzcITNsSBrJ2-robGFURD6~40a7NKL3agSCGOy3YYaMM8wAXSAvgKfDeY1QFwDODtCe43uQOrgpA~JZAt9ecfuyhZnP3IDznTXzcbwYzVLjfo3c9B-767k9IA2hxdEseYsTUzi2IbDt32xLS8EKSstrhiPAUqYe5wE-aMBWxlJFZHa7A3f6Z7mAB8U703l4p1oyPFIJpSHavDWPltnVG5f0QxNE4bFiyjkWieDwVtO1-Q6ZizMhq9qA__"
+          src="https://i.ibb.co/j51Rgbm/Video-Image.png"
           alt="video"
           style={{
             mixBlendMode: "luminosity",
             zIndex: 1,
+            width: "1280px",
+            height: "560px"
           }}
         />
         <Vector1

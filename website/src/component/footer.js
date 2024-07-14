@@ -1,15 +1,16 @@
 import HorzSocialMedia from "./horz-scl-media";
+import { ReactComponent as Logo } from "../home/assets/company-logo.svg";
 function Footer() {
   return (
     <div
       style={{
         position: "relative",
-        backgroundColor:"#101010",
+        backgroundColor: "#101010",
         height: "725px",
         backgroundImage: 'url("https://i.ibb.co/NZW5wqS/Designfooter-bg.png")',
-        backgroundSize: 'cover', // or 'contain' depending on your preference
-        backgroundPosition: 'center', // or any other position
-        width: '100%',
+        backgroundSize: "cover", // or 'contain' depending on your preference
+        backgroundPosition: "center", // or any other position
+        width: "100%",
       }}
     >
       <div
@@ -20,22 +21,29 @@ function Footer() {
           justifyContent: "space-between",
           marginRight: "100px",
           marginLeft: "80px",
+          paddingTop: "65px",
         }}
       >
-        <img
-          src="https://s3-alpha-sig.figma.com/img/0a3c/12cc/e656d145a958c979b1f7bd40f73286dc?Expires=1715558400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kucI~0I4hQfkeztmxict5VVduUFm6busNTp-Qqp47SIDoqFHS~uy1v2pGKgfHML2xwmlJChk3G3PdaG3MkWFH-Tw91MBHo1qE5vLSWFP9MWbCam1oNmKQxXSFafR4TCoKQC9XQ~TjgjMtnup9xV1liHZgIG--tDtiqIVJYcjg1GVc-KPDuHz-~KSAAKcOaDkwYBTSjRa8ry9ST0bfN-6ozKl-A0-Rq-VxMLVzZIjutg6R1BQMoKKQs6G90vU4Qh0cINuGLc82t92AAca~5qvB7jFeFRhPMbGsmbF8i3kKh7ZO6dovW2h2tWpO1Og4r334lAts7NGL-s1iNQ~8f~1Cw__"
+        <Logo
+          style={{
+            width: "250px",
+            position: "relative",
+          }}
+        />
+        {/* <img
+          src="https://s3-alpha-sig.figma.com/img/0a3c/12cc/e656d145a958c979b1f7bd40f73286dc?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A9wxiRy3QKNumKqSTFiqqknaWc~dlx6NWC39jU5pR0~NgeFLhsExh0PWrTF616hu3EB1-OliIVdw1XkClPfxQRDSQ75GMflQgzjcJUh~C8FsqnqOvz6mjiHhyJ6BhvL6bIeljLxhb3dk~tHfkiDodp1u0BUkVWb6nwr8YcbuCNSHEFs0w2xoxE~ERXv5qpZXuiejBL7VPOZ~CBr5o66zzaqxmlIGM1TTcarJZ6K1BzZtlXFiRphVMX0qzx1v1xfvADmYRWmL-zz6qNJgu~CRzptiAxW~mK-00aPU8uqbU2KBh4v~V2aqNJFKSwkgl2ymCYCEjZEiaqR5g6oIvvC5Ow__"
           style={{
             width: "250px",
           }}
-        ></img>
+        ></img> */}
         <HorzSocialMedia />
       </div>
       <div
         style={{
-          borderBottom: "1px solid #5D5D5D",
+          borderBottom: "0.5px solid #5D5D5D",
           marginRight: "80px",
           marginLeft: "95px",
-          marginTop: "-35px",
+          marginTop: "55px",
         }}
       ></div>
       <div
@@ -121,7 +129,7 @@ function Footer() {
               <li style={{ marginBottom: "15px" }}>Google Ads Management</li>
             </ul>
           </div>
-          <div style={{ zIndex:"2"}}>
+          <div style={{ zIndex: "2" }}>
             <input
               style={{
                 border: "none",
@@ -130,7 +138,7 @@ function Footer() {
                 height: "66px",
                 paddingLeft: "15px",
                 outline: "none",
-                zIndex:"2"
+                zIndex: "2",
               }}
               type="text"
               class="rounded-input"
@@ -159,7 +167,7 @@ function Footer() {
                 fontSize: "16px",
                 fontWeight: "800",
                 lineHeight: "20.16px",
-                zIndex:"2"
+                zIndex: "2",
               }}
             >
               Subscribe
@@ -176,7 +184,7 @@ function Footer() {
           textAlign: "left",
           color: "#5D5D5D",
           marginTop: "80px",
-          marginBottom:"100px"
+          marginBottom: "100px",
         }}
       >
         <ul
